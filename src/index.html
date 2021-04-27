@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/bug.esm.js"></script>
+    <script nomodule src="/build/bug.js"></script>
+  </head>
+  <body>
+    <h1>Slot Bug</h1>
+    <p>When you have a condition on for exp. href whick triggers condition rendering with slots inside, then the slot are not transported correctly (shadowdom off)</p>
+    <div>
+      <my-component> <span slot="middle">SLOTCONTENT MIDDLE</span><span slot="suffix">SUFFIXCONTENT</span> </my-component>
+    </div>
+  </body>
+</html>
